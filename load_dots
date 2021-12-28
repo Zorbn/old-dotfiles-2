@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+link_file() {
+	file=$1
+	if [[ ! -d "$HOME/$file" ]]
+	then
+		ln -s "$(realpath $file)" "$HOME/$file"
+	fi
+}
+
+unlink_file() {
+	file=$1
+	rm "$HOME/$file"
+}
+
+do_linking() {
+	# Check if changes should be reversed
+	if [[ $2 == false ]]
+	then
+		link_file "$1"
+	else
+		unlink_file "$1"
+	fi
+}
+
+reverse=false
+arg=$1
+
+if [[ $arg == "-r" ]] || [[ $arg == "--reverse" ]]
+then
+	reverse=true
+elif [[ $arg != "" ]]
+then
+	echo "Usage: load_dots [OPTIONS]"
+	echo "Links dotfiles to home directory"
+	echo "	-r, --reverse	removes changes made by this command"
+	exit
+fi
+
+script_path=$(realpath $0)
+echo "$script_path"
+dots_dir=$(dirname $script_path)
+echo "$dots_dir"
+
+cd "$dots_dir/configs"
+
+for file in *
+do
+	if [[ $file == "*" ]]; then continue; fi
+	do_linking "$file" "$reverse"
+done
+
+for file in .*
+do
+	if [[ $file == ".*" ]]; then continue; fi
+	if [[ $file == "." ]]; then continue; fi
+	if [[ $file == ".." ]]; then continue; fi
+	do_linking "$file" "$reverse"
+done
