@@ -13,6 +13,6 @@ do
 	do
 		from=$(echo $var | awk 'BEGIN { FS = "|" } ; {print $1}')
 		to=$(echo $var | awk 'BEGIN { FS = "|" } ; {print $NF}')
-		sed -i "s/$from/$to/g" $new_file
+		sed -i "s@$from@$to@g" $new_file
 	done
 done
