@@ -1,5 +1,5 @@
 Requirements:
-	- i3-gaps
-	- feh
-	- alacritty
-	- nvidia proprietary drivers
+- i3-gaps 
+- feh 
+- alacritty 
+- nvidia proprietary drivers
