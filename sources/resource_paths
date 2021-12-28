@@ -1,5 +1,5 @@
 #$HOME/.bash_profile
 
-resources_dir="$(dirname $(realpath $0))/resources"
+resources_dir="$HOME/dotfiles/resources"
 
 export NIC_BACKGROUND="$resources_dir/Aenami.jpg"

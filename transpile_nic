@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+variables_file="$(dirname $(realpath $0))/variables"
+
+for file in $(find $(dirname $(realpath $0)) -name '*.nic')
+do
+	new_file=${file%.*}
+	echo "Transpiling \"$file\" to \"$new_file\""
+	cp $file $new_file
+	
+	cat $variables_file
+	for var in $(cat $variables_file)
+	do
+		from=$(echo $var | awk 'BEGIN { FS = "|" } ; {print $1}')
+		to=$(echo $var | awk 'BEGIN { FS = "|" } ; {print $NF}')
+		sed -i "s/$from/$to/g" $new_file
+	done
+done
