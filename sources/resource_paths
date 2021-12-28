@@ -1,0 +1,5 @@
+#$HOME/.bash_profile
+
+resources_dir="$(dirname $(realpath $0))/resources"
+
+export NIC_BACKGROUND="$resources_dir/Aenami.jpg"
