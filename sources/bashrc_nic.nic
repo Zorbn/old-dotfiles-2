@@ -8,6 +8,7 @@ export EDITOR=NIC_EDITOR
 alias vi="NIC_EDITOR"
 alias top="NIC_TOP"
 alias fetch="clear; NIC_FETCH"
+alias mixer="pulsemixer"
 
 cl() {
 	if [[ -z "$1" ]]

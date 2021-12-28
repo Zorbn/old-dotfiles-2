@@ -10,3 +10,4 @@ Requirements:
 - htop
 - neovim
 - neofetch
+- pulsemixer

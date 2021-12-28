@@ -8,6 +8,7 @@ export EDITOR=nvim
 alias vi="nvim"
 alias top="htop"
 alias fetch="clear; neofetch"
+alias mixer="pulsemixer"
 
 cl() {
 	if [[ -z "$1" ]]

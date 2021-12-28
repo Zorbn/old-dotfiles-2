@@ -22,3 +22,8 @@ colors:
     magenta: "NIC_COLORS_BRIGHT_MAGENTA"
     cyan:    "NIC_COLORS_BRIGHT_CYAN"
     white:   "NIC_COLORS_BRIGHT_WHITE"
+
+window:
+  padding:
+    x: NIC_BORDER_WIDTH
+    y: NIC_BORDER_WIDTH
