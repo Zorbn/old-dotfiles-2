@@ -1,7 +1,7 @@
 colors:
   primary:
-    foreground: "NIC_COLORS_FG"
     background: "NIC_COLORS_BG"
+    foreground: "NIC_COLORS_FG"
 
   normal:
     black:   "NIC_COLORS_NORMAL_BLACK"

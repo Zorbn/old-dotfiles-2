@@ -39,6 +39,9 @@ do_linking() {
 
 update_sources() {
 	local file=$(realpath $1)
+
+	if [[ ${file##*.} == "nic" ]]; then return; fi
+
 	local reverse=$2
 	local first_line=$(head -n 1 $file)
 	local target_path=$(eval "echo ${first_line:1}")

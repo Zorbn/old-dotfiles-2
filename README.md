@@ -3,3 +3,6 @@ Requirements:
 - feh 
 - alacritty 
 - nvidia proprietary drivers
+- htop
+- neovim
+- neofetch
