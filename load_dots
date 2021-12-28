@@ -27,10 +27,11 @@ update_sources() {
 	local file=$(realpath $1)
 	local reverse=$2
 	local first_line=$(head -n 1 $file)
-	local target_path=${first_line:1}
+	local target_path=$(eval "echo ${first_line:1}")
 
 	if [[ ! -f $target_path ]]
 	then
+		echo "$target_path"
 		echo "\"$file\" needs a target path as the first line"
 		echo 'eg: $HOME/.bashrc'
 		return
