@@ -1,7 +1,7 @@
 [colors]
-background = #2e3440
-foreground = #d8dee9
-accent = #bf616a
+background = #1a1b26
+foreground = #c0caf5
+accent = #f7768e
 
 [bar/polybar_nic]
 bottom = false
