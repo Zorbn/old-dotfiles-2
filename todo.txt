@@ -1,4 +1,2 @@
 TODO:
-- Setup rofi
-- Test picom
 - Port void-dotfiles
