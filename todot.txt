@@ -1,0 +1,5 @@
+TODO:
+- Set default terminal
+- Setup rofi
+- Test picom
+- Port void-dotfiles
