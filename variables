@@ -1,4 +1,4 @@
-NIC_THEME|tokyonight
+NIC_THEME|nord_dark
 NIC_SCRIPTS|$HOME/dotfiles/scripts
 NIC_TERMINAL|alacritty
 NIC_EDITOR|nvim
