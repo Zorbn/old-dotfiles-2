@@ -1,3 +1,8 @@
 #$HOME/.bash_profile
 
 export TERMINAL=NIC_TERMINAL
+
+if [[ -z "$DISPLAY" ]] && [[ "$(tty)" == "/dev/tty1" ]]
+then
+	exec startx
+fi
