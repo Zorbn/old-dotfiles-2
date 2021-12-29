@@ -1,6 +1,7 @@
 [colors]
 background = #1a1b26
 foreground = #c0caf5
+accent = #f7768e
 
 [bar/polybar_nic]
 bottom = false
@@ -41,6 +42,7 @@ format-background = ${colors.background}
 
 label-focused = %index% %icon%
 label-focused-padding = 1
+label-focused-foreground = ${colors.accent}
 
 label-unfocused = %index% %icon%
 label-unfocused-padding = 1

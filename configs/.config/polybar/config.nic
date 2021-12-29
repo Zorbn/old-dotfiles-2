@@ -1,6 +1,7 @@
 [colors]
 background = NIC_COLORS_BG
 foreground = NIC_COLORS_FG
+accent = NIC_COLORS_NORMAL_RED
 
 [bar/polybar_nic]
 bottom = false
@@ -41,6 +42,7 @@ format-background = ${colors.background}
 
 label-focused = %index% %icon%
 label-focused-padding = 1
+label-focused-foreground = ${colors.accent}
 
 label-unfocused = %index% %icon%
 label-unfocused-padding = 1
