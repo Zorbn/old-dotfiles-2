@@ -27,3 +27,10 @@ window:
   padding:
     x: NIC_BORDER_WIDTH
     y: NIC_BORDER_WIDTH
+
+font:
+  normal:
+    family: NIC_FONT_NAME
+    style: Regular
+  
+  size: NIC_FONT_SIZE_M

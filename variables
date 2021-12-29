@@ -3,6 +3,11 @@ NIC_EDITOR|nvim
 NIC_TOP|htop
 NIC_FETCH|neofetch
 
+NIC_FONT_NAME|HackNerdFont
+NIC_FONT_SIZE_L|12
+NIC_FONT_SIZE_M|10
+NIC_FONT_SIZE_S|8
+
 NIC_BORDER_WIDTH|2
 
 NIC_BACKGROUND|$HOME/dotfiles/resources/Aenami.jpg

@@ -27,3 +27,10 @@ window:
   padding:
     x: 2
     y: 2
+
+font:
+  normal:
+    family: HackNerdFont
+    style: Regular
+  
+  size: 10

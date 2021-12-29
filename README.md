@@ -4,8 +4,10 @@ Usage:
 
 Requirements:
 - i3-gaps 
+- polybar
 - feh 
 - alacritty 
+- hack nerd font (included but you may need to use fc-cache or similar to update cache)
 - nvidia proprietary drivers
 - htop
 - neovim
