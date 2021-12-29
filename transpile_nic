@@ -1,18 +1,30 @@
 #!/usr/bin/env bash
 
-variables_file="$(dirname $(realpath $0))/variables"
+dots_dir=$(dirname $(realpath $0))
+variables_file="$dots_dir/variables"
 
-for file in $(find $(dirname $(realpath $0)) -name '*.nic')
+transpile_by_file() {
+	local file_path=$1
+	local new_file_path=$2
+
+	for var in $(cat $file_path)
+	do
+		from=$(echo $var | awk 'BEGIN { FS = "|" } ; {print $1}')
+		to=$(echo $var | awk 'BEGIN { FS = "|" } ; {print $NF}')
+		sed -i "s@$from@$to@g" $new_file_path
+	done
+}
+
+for file in $(find $dots_dir -name '*.nic')
 do
 	new_file=${file%.*}
 	echo "Transpiling \"$file\" to \"$new_file\""
 	cp $file $new_file
 	
-	cat $variables_file
-	for var in $(cat $variables_file)
-	do
-		from=$(echo $var | awk 'BEGIN { FS = "|" } ; {print $1}')
-		to=$(echo $var | awk 'BEGIN { FS = "|" } ; {print $NF}')
-		sed -i "s@$from@$to@g" $new_file
-	done
+	transpile_by_file $variables_file $new_file
+
+	theme_file_name=$(cat $variables_file | grep "NIC_THEME" | awk 'BEGIN { FS = "|" } ; {print $NF}')
+	theme_file="$dots_dir/themes/$theme_file_name"
+
+	transpile_by_file $theme_file $new_file
 done
