@@ -7,6 +7,9 @@ link_file() {
 
 unlink_file() {
 	local file=$1
+
+	if [[ ${file##*.} == "nic" ]]; then return; fi
+
 	rm "$HOME/$file"
 }
 
@@ -14,6 +17,8 @@ do_linking() {
 	# Check if changes should be reversed
 	local file=$1
 	local reverse=$2
+
+	if [[ ${file##*.} == "nic" ]]; then return; fi
 
 	if [[ ! -d "$HOME/$file" ]]
 	then
