@@ -1,4 +1,4 @@
-NIC_THEME|tokyo_night
+NIC_THEME|zenburn
 NIC_SCRIPTS|$HOME/dotfiles/scripts
 NIC_TERMINAL|alacritty
 NIC_EDITOR|nvim

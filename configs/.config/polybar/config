@@ -1,7 +1,7 @@
 [colors]
-background = #1a1b26
-foreground = #c0caf5
-accent = #f7768e
+background = #3f3f3f
+foreground = #dcdccc
+accent = #705050
 
 [bar/polybar_nic]
 monitor = ${env:MONITOR:}

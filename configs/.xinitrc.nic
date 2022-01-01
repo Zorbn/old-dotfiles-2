@@ -1,3 +1,5 @@
+xset b off
+xmodmap ~/.xsession
 NIC_SCRIPTS/loadnvidia &
 feh --bg-fill "NIC_BACKGROUND"
 exec dbus-launch --sh-syntax --exit-with-session i3
