@@ -18,10 +18,10 @@ font pango:HackNerdFont 10
 #font pango:DejaVu Sans Mono 8
 
 # Theme                  border                    bg                        text                     indicator                 child_border
-client.focused           #705050     #705050     #3f3f3f            #f0deae  #705050
-client.focused_inactive  #709080   #709080   #dcdccc            #dcdccc             #709080
-client.unfocused         #4d4d4d   #4d4d4d   #709080  #709080   #4d4d4d 
-client.urgent            #f0deae  #f0deae  #3f3f3f            #705050     #f0deae 
+client.focused           #f7768e     #f7768e     #1a1b26            #ff9e64  #f7768e
+client.focused_inactive  #414868   #414868   #c0caf5            #c0caf5             #414868
+client.unfocused         #15161E   #15161E   #414868  #414868   #15161E 
+client.urgent            #ff9e64  #ff9e64  #1a1b26            #f7768e     #ff9e64 
 
 # client.placeholder    #000000 #0c0c0c #ffffff #000000 #0c0c0c
 # client.background     #ffffff

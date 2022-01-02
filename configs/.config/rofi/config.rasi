@@ -4,12 +4,12 @@
     highlight: bold italic;
     scrollbar: false;
 
-    palette-bg0:       #3f3f3f;
-    palette-bg1:       #3f3f3f;
-    palette-fg0:       #dcdccc;
-    palette-highlight: #705050;
-    palette-active:    #f0deae;
-    palette-warning:   #dfcf9f;
+    palette-bg0:       #1a1b26;
+    palette-bg1:       #1a1b26;
+    palette-fg0:       #c0caf5;
+    palette-highlight: #f7768e;
+    palette-active:    #ff9e64;
+    palette-warning:   #e0af68;
 
     /* Base colors */
     background:                  @palette-bg0;
