@@ -1,5 +1,5 @@
 NIC_THEME|tokyo_night
-NIC_SCRIPTS|$HOME/dotfiles/scripts
+NIC_SCRIPTS|$HOME/Dotfiles/scripts
 NIC_TERMINAL|alacritty
 NIC_EDITOR|nvim
 NIC_TOP|htop
